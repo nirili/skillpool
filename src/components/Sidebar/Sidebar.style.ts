@@ -18,10 +18,7 @@ export const MenuLogo = styled.div`
 export const SidebarContainer = styled.div`
   display: flex;
   flex-direction: column;
-  /* align-items: left; */
-  position: sticky;
-  height: 100vh;
-  /* width: 250px; */
+  height: 719px;
   background: #252529;
   color: #fff;
   font-family: "Roboto", sans-serif;

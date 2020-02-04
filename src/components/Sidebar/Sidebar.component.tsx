@@ -23,15 +23,11 @@ const Sidebar: FunctionComponent = () => {
           </SidebarMenuItem>
           <SidebarMenuItem>
             <Icon></Icon>
-            <SidebarMenuItemLabel>Collaborators list</SidebarMenuItemLabel>
-          </SidebarMenuItem>
-          <SidebarMenuItem>
-            <Icon></Icon>
             <SidebarMenuItemLabel>My profile</SidebarMenuItemLabel>
           </SidebarMenuItem>
           <SidebarMenuItem>
             <Icon></Icon>
-            <SidebarMenuItemLabel>Dashboard</SidebarMenuItemLabel>
+            <SidebarMenuItemLabel>Collaborators list</SidebarMenuItemLabel>
           </SidebarMenuItem>
         </SidebarMenu>
         <MenuSignOut>Sign out</MenuSignOut>

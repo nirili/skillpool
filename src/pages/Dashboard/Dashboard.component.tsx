@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from "react";
 import Sidebar from "../../components/Sidebar";
 import UserCard from "../../components/UserCard";
+import CollaboratorsList from "../../components/CollaboratorsList";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -19,8 +20,8 @@ const Container = styled.div`
       grid-template-columns: 1fr;
       grid-template-rows: 72px 1fr;
       grid-template-areas:
-        "head"
-        "main";
+        "head head head"
+        "main main main";
     }
   }
 `;
@@ -31,10 +32,11 @@ const GridSidebar = styled.div`
 
 const GridHeader = styled.div`
   grid-area: head;
-  box-shadow: 0 1px 0 0 #eaedf3;
+  box-shadow: 0 10px 0 0 #eaedf3;
 `;
 
 const GridContent = styled.div`
+  height: 100vh;
   padding: 20px;
   background: #f0f1f7;
   grid-area: main;
@@ -49,7 +51,8 @@ const Dashboard: FunctionComponent<{}> = () => {
         </GridSidebar>
         <GridHeader />
         <GridContent>
-          <UserCard />
+          {/* <UserCard /> */}
+          <CollaboratorsList />
         </GridContent>
       </Container>
     </>

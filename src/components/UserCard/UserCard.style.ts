@@ -4,12 +4,12 @@ export const UserCardContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 100%;
-  height: auto;
-  min-height: 490px;
+  width: 80%;
+  height: 490px;
   border-radius: 8px;
   background: #fff;
   padding: 20px;
+  margin: 0 auto;
   box-sizing: border-box;
   box-shadow: 0 10px 14px -12px #777;
 
@@ -22,7 +22,7 @@ export const UserCardContainer = styled.div`
 export const UserCardLeft = styled.div`
   width: 30%;
   height: 480px;
-  background: lightpink;
+  /* background: lightpink; */
 
   @media screen and (max-width: 375px) {
     width: 100%;
@@ -34,8 +34,8 @@ export const UserAvatar = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 240px;
-  background: lightblue;
+  height: 200px;
+  /* background: lightblue; */
 
   img {
     border-radius: 50%;
@@ -47,7 +47,7 @@ export const UserAvatar = styled.div`
 
 export const UserInfoContainer = styled.div`
   width: 100%;
-  height: 240px;
+  height: 280px;
   text-transform: uppercase;
 `;
 
@@ -55,7 +55,7 @@ export const UserSocialLinks = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 25%;
+  height: 24%;
   width: 100%;
 `;
 
@@ -63,18 +63,15 @@ export const UserInfo = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 25%;
+  height: 20%;
   width: 100%;
 `;
 
 export const UserCardRight = styled.div`
   display: flex;
   flex-wrap: wrap;
-  width: 66%;
-  height: 480px;
-  padding: 30px;
-  background: lightgreen;
-  text-transform: uppercase;
+  width: 60%;
+  background: #f9f9f9;
   box-sizing: border-box;
 
   @media screen and (max-width: 375px) {

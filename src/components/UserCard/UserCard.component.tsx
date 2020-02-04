@@ -1,4 +1,5 @@
 import React, { FunctionComponent } from "react";
+import Tabs from "../Tabs";
 import {
   UserAvatar,
   UserCardContainer,
@@ -24,7 +25,9 @@ const UserCard: FunctionComponent<{}> = () => {
             <UserSocialLinks>linkedin - Github</UserSocialLinks>
           </UserInfoContainer>
         </UserCardLeft>
-        <UserCardRight></UserCardRight>
+        <UserCardRight>
+            <Tabs />
+        </UserCardRight>
       </UserCardContainer>
     </>
   );
