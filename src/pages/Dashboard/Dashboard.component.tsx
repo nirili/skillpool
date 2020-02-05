@@ -1,4 +1,5 @@
 import React, { FunctionComponent } from "react";
+import Title from "../../components/Title";
 import Sidebar from "../../components/Sidebar";
 import UserCard from "../../components/UserCard";
 import CollaboratorsList from "../../components/CollaboratorsList";
@@ -51,7 +52,9 @@ const Dashboard: FunctionComponent<{}> = () => {
         </GridSidebar>
         <GridHeader />
         <GridContent>
-          {/* <UserCard /> */}
+          {/* <Title title="User's profile" />
+          <UserCard /> */}
+          <Title title="Collaborators List" />
           <CollaboratorsList />
         </GridContent>
       </Container>

@@ -1,127 +1,110 @@
 import React, { FunctionComponent } from "react";
+import Modali, { useModali } from "modali";
 import { ListTable } from "./CollaboratorsList.style";
+import UserCard from "../UserCard";
+
+interface UserProps {
+  firstName: string;
+  lastName: string;
+  email: string;
+  profile: string;
+}
 
 const users = [
   {
     id: 1,
-    firstname: "India",
-    lastname: "Dabon",
+    firstName: "India",
+    lastName: "Dabon",
     email: "india.dabon@email.fr"
   },
   {
     id: 2,
-    firstname: "Damien",
-    lastname: "Saillard",
+    firstName: "Damien",
+    lastName: "Saillard",
     email: "damien.saillard@email.fr"
   },
   {
     id: 3,
-    firstname: "Malou",
-    lastname: "Anglade",
+    firstName: "Malou",
+    lastName: "Anglade",
     email: "malou.anglade@email.fr"
   },
   {
     id: 4,
-    firstname: "Mohamed",
-    lastname: "Aissaoui",
+    firstName: "Mohamed",
+    lastName: "Aissaoui",
     email: "mohamed.aissaoui@email.fr"
   },
   {
     id: 5,
-    firstname: "Céline",
-    lastname: "Gonzalez",
+    firstName: "Céline",
+    lastName: "Gonzalez",
     email: "celine.gonzalez@email.fr"
   },
   {
     id: 6,
-    firstname: "Anas",
-    lastname: "Derraz",
+    firstName: "Anas",
+    lastName: "Derraz",
     email: "anas.derraz@email.fr"
+  },
+  {
+    id: 7,
+    firstName: "Soukaina",
+    lastName: "Kamel",
+    email: "soukaina.kamel@email.fr"
+  },
+  {
+    id: 8,
+    firstName: "Alexandre",
+    lastName: "Hachim",
+    email: "alexandre.hachim@email.fr"
+  },
+  {
+    id: 9,
+    firstName: "Kevin",
+    lastName: "Lefranc",
+    email: "kevin.lefranc@email.fr"
+  },
+  {
+    id: 10,
+    firstName: "Antoine",
+    lastName: "Guittet",
+    email: "antoine.guittet@email.fr"
   }
 ];
 
 const CollaboratorsList: FunctionComponent<{}> = () => {
+  const [modal, toggleModal] = useModali({
+    animated: true,
+    large: true
+  });
   return (
     <>
       <ListTable>
         <thead>
           <tr>
-            <th>firstname</th>
-            <th>lastname</th>
+            <th>firstName</th>
+            <th>lastName</th>
             <th>email</th>
             <th>profile</th>
           </tr>
         </thead>
 
         <tbody>
-          {/* {users.map(user => {
+          {users.map(user => (
             <tr key={user.id}>
-              <td>{user.firstname}</td>
-              <td>{user.lastname}</td>
+              <td>{user.firstName}</td>
+              <td>{user.lastName}</td>
               <td>{user.email}</td>
-              <td>profile</td>
-            </tr>;
-          })} */}
-          <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>john.doe@email.fr</td>
-            <td>profile icon</td>
-          </tr>
-          <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>john.doe@email.fr</td>
-            <td>profile icon</td>
-          </tr>
-          <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>john.doe@email.fr</td>
-            <td>profile icon</td>
-          </tr>
-          <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>john.doe@email.fr</td>
-            <td>profile icon</td>
-          </tr>
-          <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>john.doe@email.fr</td>
-            <td>profile icon</td>
-          </tr>
-          <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>john.doe@email.fr</td>
-            <td>profile icon</td>
-          </tr>
-          <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>john.doe@email.fr</td>
-            <td>profile icon</td>
-          </tr>
-          <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>john.doe@email.fr</td>
-            <td>profile icon</td>
-          </tr>
-          <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>john.doe@email.fr</td>
-            <td>profile icon</td>
-          </tr>
-          <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>john.doe@email.fr</td>
-            <td>profile icon</td>
-          </tr>
+              <td>
+                <button onClick={toggleModal}>profile</button>
+
+                <Modali.Modal {...modal}>
+                  <UserCard />
+                </Modali.Modal>
+              </td>
+            </tr>
+          ))}
         </tbody>
       </ListTable>
     </>

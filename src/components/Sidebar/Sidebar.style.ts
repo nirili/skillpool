@@ -48,7 +48,6 @@ export const SidebarMenuItemLabel = styled.p`
   color: #fff;
   font-size: 14px;
   line-height: 1.5;
-  font-weight: 600;
   text-align: left;
   padding: 12px 0;
   color: #fff;
@@ -57,13 +56,4 @@ export const SidebarMenuItemLabel = styled.p`
 export const Icon = styled.svg`
   width: 20px;
   height: 20px;
-`;
-
-export const MenuSignOut = styled.div`
-  border-top: 1px solid #2e2e33;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 500;
-  height: 45px;
-  color: #fff;
 `;

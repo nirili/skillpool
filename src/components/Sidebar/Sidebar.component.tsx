@@ -5,8 +5,7 @@ import {
   SidebarMenu,
   SidebarMenuItem,
   SidebarMenuItemLabel,
-  MenuLogo,
-  MenuSignOut
+  MenuLogo
 } from "./Sidebar.style";
 
 const Sidebar: FunctionComponent = () => {
@@ -29,8 +28,11 @@ const Sidebar: FunctionComponent = () => {
             <Icon></Icon>
             <SidebarMenuItemLabel>Collaborators list</SidebarMenuItemLabel>
           </SidebarMenuItem>
+          <SidebarMenuItem>
+            <Icon></Icon>
+            <SidebarMenuItemLabel>Sign out</SidebarMenuItemLabel>
+          </SidebarMenuItem>
         </SidebarMenu>
-        <MenuSignOut>Sign out</MenuSignOut>
       </SidebarContainer>
     </>
   );
