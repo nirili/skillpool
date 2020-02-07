@@ -7,6 +7,7 @@ import React from "react";
 // } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import FormComponent from "./pages/FormComponent";
+import Home from "./pages/Home";
 import "./App.css";
 
 const App: React.FC = () => {
@@ -16,7 +17,7 @@ const App: React.FC = () => {
         <Dashboard />
       </Router> */}
 
-      <FormComponent />
+      <Home />
 
       {/* Routes with their path & coreesponding component */}
       {/* <Route path="" component={} />
