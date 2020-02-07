@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from "react";
-import Tabs from "../Tabs";
+// import Tabs from "../Tabs";
+import Test from "../Test";
 import {
   UserAvatar,
   UserCardContainer,
@@ -9,6 +10,21 @@ import {
   UserSocialLinks,
   UserInfoContainer
 } from "./UserCard.style";
+
+const tabs = [
+  {
+    id: 1,
+    label: "about",
+    content:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste blanditiis eligendi rerum autem corporis possimus? Aspernatur beatae omnis dolore corporis."
+  },
+  {
+    id: 2,
+    label: "skills",
+    content:
+      "Bacon ipsum dolor amet short loin spare ribs biltong tri-tip corned beef sausage t-bone prosciutto kevin alcatra bresaola pastrami ball tip rump pork loin."
+  }
+];
 
 const UserCard: FunctionComponent<{}> = () => {
   return (
@@ -26,7 +42,15 @@ const UserCard: FunctionComponent<{}> = () => {
           </UserInfoContainer>
         </UserCardLeft>
         <UserCardRight>
-            <Tabs />
+          {tabs.map(tab => (
+            <Test
+              key={tab.id}
+              id={tab.id}
+              label={tab.label}
+              content={tab.content}
+              isChecked={true}
+            />
+          ))}
         </UserCardRight>
       </UserCardContainer>
     </>

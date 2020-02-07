@@ -4,14 +4,14 @@ export const UserCardContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 80%;
+  width: 100%;
   height: 490px;
   border-radius: 8px;
   background: #fff;
   padding: 20px;
   margin: 0 auto;
   box-sizing: border-box;
-  box-shadow: 0 10px 14px -12px #777;
+  /* box-shadow: 0 10px 14px -12px #777; */
 
   @media screen and (max-width: 375px) {
     flex-direction: column;
@@ -22,7 +22,6 @@ export const UserCardContainer = styled.div`
 export const UserCardLeft = styled.div`
   width: 30%;
   height: 480px;
-  /* background: lightpink; */
 
   @media screen and (max-width: 375px) {
     width: 100%;
@@ -35,7 +34,6 @@ export const UserAvatar = styled.div`
   align-items: center;
   width: 100%;
   height: 200px;
-  /* background: lightblue; */
 
   img {
     border-radius: 50%;

@@ -25,4 +25,5 @@ export const TabPanel = styled.div`
   padding: 30px 40px;
   font-size: 1em;
   line-height: 2;
+  box-sizing: border-box;
 `;
