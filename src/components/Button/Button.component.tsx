@@ -3,11 +3,12 @@ import { ButtonStyle } from "./Button.style";
 
 export interface ButtonProps {
   text: string;
+  url: string;
 }
 
-const Button: FunctionComponent<ButtonProps> = ({ text }) => {
+const Button: FunctionComponent<ButtonProps> = ({ text, url }) => {
   return (
-    <ButtonStyle>
+    <ButtonStyle to={url}>
       <p>{text}</p>
     </ButtonStyle>
   );

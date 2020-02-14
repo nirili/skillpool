@@ -46,7 +46,7 @@ export const NavStyle = styled.header`
 
 export const Logo = styled.div`
   align-items: center;
-  margin-left: 15px;
+  margin-left: 47px;
 
   a {
     color: #000;
@@ -61,7 +61,6 @@ export const Logo = styled.div`
 
   p {
     display: inline-block;
-    color: #10aded;
   }
 
   @media screen and (max-width: 864px) {

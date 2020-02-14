@@ -2,46 +2,6 @@ import styled from "styled-components";
 
 import img from "./background.jpg";
 
-// export const HeroImg = styled.div`
-//   align-items: center;
-//   background-image: url(${img});
-//   background-position: center top;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   display: flex;
-//   height: 100vh;
-//   max-height: 1200px;
-// `;
-
-// export const Container = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: left;
-//   font-size: 3em;
-//   font-weight: 800;
-//   line-height: 48px;
-//   width: 100%;
-//   text-transform: uppercase;
-//   padding: 0px 10vh;
-
-//   h1 {
-//     font-size: 2em;
-//   }
-
-//   p {
-//     font-size: 0.62em;
-//   }
-
-//   @media screen and (min-width: 340px) and (max-width: 479px) {
-//     margin: 0 auto;
-//     padding: 0px 1vh;
-
-//     p {
-//       font-size: 0.56em;
-//     }
-//   }
-// `;
-
 export const Container = styled.div`
   display: flex;
   flex-direction: row;

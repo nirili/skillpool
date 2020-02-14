@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from "react";
 import { FormWrapper, FieldStyle } from "./SignUp.style";
 import { Formik, Form } from "formik";
+import axios from "axios";
 
 interface MyFormProps {
   lastName: string;
@@ -23,7 +24,26 @@ const SignUp: FunctionComponent<{}> = () => {
           }}
           onSubmit={(values: MyFormProps, { setSubmitting }) => {
             setTimeout(() => {
-              alert(JSON.stringify(values, null, 2));
+              // alert(JSON.stringify(values, null, 2));
+              axios({
+                method: "POST",
+                url: "http://localhost:4000/users",
+                data: {
+                  firstName: values.firstName,
+                  lastName: values.lastName,
+                  email: values.email,
+                  password: values.password
+                }
+              })
+                .then(response => {
+                  const c = console;
+                  c.log("res : ", response);
+                  c.log("res : ", response.data.redirect === "/dashboard");
+                })
+                .catch(error => {
+                  const c = console;
+                  c.log("res : ", error);
+                });
               setSubmitting(false);
             }, 500);
           }}

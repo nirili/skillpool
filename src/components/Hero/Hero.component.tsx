@@ -13,7 +13,7 @@ const Hero: FunctionComponent<HeroProps> = props => {
         <HeroMotto>
           <h1>{props.motto}</h1>
           <p>{props.description} </p>
-          <Button text="create account" />
+          <Button url={"/register"} text="create account" />
         </HeroMotto>
         <HeroImg />
       </HeroWrapper>

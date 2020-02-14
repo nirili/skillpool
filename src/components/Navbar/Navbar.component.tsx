@@ -24,9 +24,10 @@ const Navbar: FunctionComponent<{}> = () => {
   return (
     <NavStyle>
       <Logo>
-        <a href="/">
+        {/* <a href="/">
           <img src="/img/" alt="logo" />
-        </a>
+        </a> */}
+        <p>SKILLPOOL</p>
       </Logo>
       <NavWrapper>
         <ul>

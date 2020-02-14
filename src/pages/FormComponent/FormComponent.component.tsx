@@ -26,7 +26,9 @@ const FormContainer = styled.div`
 const FormImage = styled.div`
   width: 430px;
   height: 100%;
-  background: lightblue;
+  display: flex;
+  justify-content: center;
+  background-image: url("/img/signup.png");
 `;
 
 const FormRightSide = styled.div`
@@ -40,7 +42,7 @@ const FormRightSide = styled.div`
 const FormComponent: FunctionComponent<{}> = () => {
   return (
     <>
-      {/* <NavBar /> */}
+      <NavBar />
       <Container>
         <FormContainer>
           <FormImage></FormImage>
